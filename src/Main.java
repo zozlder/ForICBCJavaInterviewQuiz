@@ -174,7 +174,7 @@ public class Main {
         }
     }
 
-    /* ==================== SupermarketService ==================== */
+
     static class SupermarketService {
         public static final Goods APPLE = new Goods("蘋果", new BigDecimal("8"));
         public static final Goods STRAWBERRY = new Goods("草莓", new BigDecimal("13"));
@@ -188,8 +188,7 @@ public class Main {
         }
     }
 
-    /* ==================== 測試入口 ==================== */
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         System.setErr(System.out);
         configureLogging();
         SupermarketService service = new SupermarketService();
@@ -227,7 +226,7 @@ public class Main {
             });
         }
     }
-
+//
     private static final Logger LOG = Logger.getLogger(Main.class.getName());
 
     private static void check(String caseName, BigDecimal actual, String expected) {
